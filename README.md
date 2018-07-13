@@ -31,6 +31,7 @@ Please feel free to contribute. You can [report bugs](https://github.com/poynt/c
     * [.secondScreen.collectAgreement(successCallback, errorCallback,options)](#Poynt.launchAskConf)
     * [.secondScreen.collectSignature(successCallback, errorCallback,options)](#Poynt.launchSign)
     * [.secondScreen.displayMessage(successCallback, errorCallback,options)](#Poynt.launchMsg)
+    * [.secondScreen.displayHome(successCallback, errorCallback,options)](#Poynt.launchHome)
     * [.business.getBusiness(successCallback, errorCallback)](#Poynt.launchInfo)
 
 ---
@@ -179,6 +180,27 @@ __Supported Platforms__
 ```js
 Poynt.secondScreen.displayMessage(succcessCallback, failureCallback,{"msg":'a message in second screen'});
 ```
+
+<a name="Poynt.launchHome"></a>
+### Poynt.secondScreen.displayHome(successCallback, errorCallback,options)
+Launches secondScreenService V1->showWelcome.
+
+__Supported Platforms__
+
+- PoyntOS
+
+
+| Param | Type | Description |
+| --- | --- | --- |
+| successCallback |  |  |
+| errorCallback |  |  |
+| options | JSON |  |
+
+**Example Request**  
+```js
+Poynt.secondScreen.displayHome(succcessCallback, failureCallback,{});
+```
+
 <a name="Poynt.launchInfo"></a>
 ### Poynt.business.getBusiness(successCallback, errorCallback)
 Launches businessService->getBusiness. The response is passed to the success callback as a JSON object. In case of error a string is passed in errorCallback
